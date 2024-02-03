@@ -1,18 +1,30 @@
+:root{
+    --primary-dark : #2f3242;
+    --primary-light : #cfcfcf;
+    --primary-text-light: #000;
+    --primary-text-dark: #fff;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+h1{
+    margin-left: 30px;
+}
+span{
+    color: red;
+}
 body{
     background: #3e4153;
 }
 nav{
-    background-color: #2f3242;
+    background-color: var(--primary-dark);
     height: 80px;
     width: 100%;
 }
 .container{
-    background-color: #2f3242;
+    background-color: var(--primary-dark);
     min-height: 300px;
 }
 label.logo{
@@ -104,4 +116,5 @@ a.active,a:hover{
         border-radius: 30%;
         
     }
+    
 }
