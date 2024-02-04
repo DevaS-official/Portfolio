@@ -1,5 +1,6 @@
 :root{
     --primary-dark : #2f3242;
+    --primary-grey:#282a35;
     --primary-light : #cfcfcf;
     --primary-text-light: #000;
     --primary-text-dark: #fff;
@@ -8,7 +9,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}i{
+    scroll-behavior: smooth;
+}
+.main{
+    min-height: 100vh;
+    background: linear-gradient(260deg,#505055,var(--primary-grey),var(--primary-dark));
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+i{
     z-index: 100;
 }
 h1{
@@ -18,27 +38,36 @@ span{
     color: red;
 }
 body{
+
     background: #3e4153;
+    
+}
+div{
+    color: var(--primary-light);
 }
 nav{
-    position: sticky;
-    top: 0;
-    background-color: var(--primary-dark);
+    /*background-color: var(--primary-dark);*/
     height: 80px;
     width: 100%;
 }
 .container{
-    background-color: var(--primary-dark);
+    
+    /*background-color: var(--primary-dark);*/
     min-height: 300px;
 }
 
 label.logo{
-    color: white;
+    background: linear-gradient(to left, #000,#fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 35px;
     line-height: 80px;
-    padding: 0 100px;
+    padding: 0 60px;
     font-weight: bold;
 
+}
+#About,#Contact,#Service{
+    min-height: 500px;
 }
 nav ul{
     float: right;

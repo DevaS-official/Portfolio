@@ -13,6 +13,7 @@
             $('nav ul li a').click(function () {
                 $('nav ul li a').removeClass('active');
                 $(this).addClass('active');
+                $('#check').prop("checked",false);
             });
         });
     </script>
@@ -23,10 +24,9 @@
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
-
             <i class="fa fa-bars"></i>
         </label>
-        <label class="logo"></label>
+        <label class="logo">Deva</label>
         <ul>
             <li><a href="#Home" class="active">Home</a></li>
             <li><a href="#About">About</a></li>
@@ -34,10 +34,22 @@
             <li><a href="#Service">Service</a></li>
         </ul>
     </nav>
-    <div class="container">
-        <h1>I'm <span>Deva</span></h1>
+    <div class="container" id="Home">
+        <h1>Home</h1>
+    </div>
+    </div>
+    <div>
+    <div id="About">
+        <h1>About</h1>
+    </div>
+    <div id="Contact">
+        <h1>Contact</h1>
+    </div>
+    <div id="Service">
+        <h1>Service</h1>
     </div>
    </div>
+   
 
 </body>
 
