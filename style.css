@@ -8,6 +8,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}i{
+    z-index: 100;
 }
 h1{
     margin-left: 30px;
@@ -19,6 +21,8 @@ body{
     background: #3e4153;
 }
 nav{
+    position: sticky;
+    top: 0;
     background-color: var(--primary-dark);
     height: 80px;
     width: 100%;
@@ -27,6 +31,7 @@ nav{
     background-color: var(--primary-dark);
     min-height: 300px;
 }
+
 label.logo{
     color: white;
     font-size: 35px;
@@ -52,9 +57,10 @@ nav ul li a{
     text-transform: uppercase;
 }
 a.active,a:hover{
-    background: #606364;
+    
     color: white;
-    border-radius: 20px;
+    border-bottom: 2px solid green;
+    border-radius: 5px;
     padding: 10px;
     transition: .5s;
 }
@@ -104,6 +110,7 @@ a.active,a:hover{
         font-size: 20px;
     }
     a:hover,a.active{
+        border: 0;
         background: none;
         color: #0082e6;
     }
